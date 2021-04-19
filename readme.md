@@ -1,29 +1,29 @@
-# Blazor ServerSide- Thinking about the web from a different angle
+# Server Side Blazor - The web from a different angle
 
 ## A short history lesson
 In this day and age, there are more ways to build for the web than you can count. You have multiple different approaches, languages and stacks.
 
-Until relatively recently, the prefered approach when any kind of dynamic content was involved was to render the front end on the back end. Technologies like PHP, ASP class and ASP.Net.
+Until relatively recently, the prefered approach when any kind of dynamic content was involved, was to render the front end on the back end, using technologies like PHP, classic ASP and ASP.NET.
 
-This evolved over time and implemented client side features via Ajax - asyncronous javascript and xml. This allowed the clients to be more responsive, changing data on the page live rather than forcing a reload.
+These evolved over time and added client side features, allowing the clients to be more responsive and to change data on the page live rather than forcing a reload. Enter AJAX - asyncronous JavaScript and XML.
 
-Due to this jscript took on a new lease of life and took us to where we are now - entire javascript frameworks that are back end agnostic - having the back end as purely an api with all front end logic running in the client meaning a much more fluid experience in return for heavier client responsibility and arguably a more difficult development experience.
+Due to this JavaScript took on a new lease of life and took us to where we are now: We have Entire JavaScript frameworks that are back end agnostic, having the back end as purely an API with all front end logic running in the client. This gives us a much more fluid experience in return for heavier client responsibility and arguably a more difficult development experience!
 
-Overtime, these javascript frameworks matured, starting with knockout.js, a few versions of angular and now React.
+~Overtime, these javascript frameworks matured, starting with knockout.js, a few versions of angular and now React.~
 
-## Blazors big selling point
+## Blazor's big selling point
 
-This move from exposing the UI from the backend in server languages like c# to exposing in the front end with javascript meant theres a large number of developers outside of their comfort zone.
+This move from exposing the UI from the backend in server languages like C# to exposing in the front end with JavaScript meant that a large number of developers had to leave their comfort zones in order to participate.
 
-Its also not hard to argue that javascript isn't ideal for larger project. It suffers from a lack of type safety and thus coersion hurdles. It can behave different in different browsers (less of an issue these days) and even has fundamental issues with basic maths. Its the best programming language we have in the browser mostly due to it being the only language we have in the browser.
+It's also not hard to argue that JavaScript isn't ideal for larger projects. It suffers from a lack of type safety and thus coersion hurdles. It can behave different in different browsers (less of an issue these days) and even has fundamental issues with basic maths. Its the best programming language we have in the browser mostly due to it being the only language we have in the browser. This is why TypeScript was invented.
 
-That was true until WASM - Web Assembly - mozilla's genius simplification of javascript down to the bare essentials - but amazingly optimised - the idea being it can be used a compile too target - its not supposed to be used by devs - but compiler tools.
+That was true until WASM - Web Assembly - Mozilla's genius simplification of JavaScript down to the bare essentials - but amazingly optimised - the idea being it can be used a compile target - it's not supposed to be used by devs - but compiler tools.
 
-This enabled microsoft and Xamarin to produce Blazor - a new take on the client - powered by a complete version of .net (mono) running on WASM. This means your client code is any .net supported language such as C# - allowing for enterprise standards in front end code.
+This enabled Microsoft and Xamarin to produce Blazor - a new take on the client - powered by a complete version of .NET (Mono) running on WASM. This means your client code is any .NET supported language such as C# - allowing for enterprise standards in front end code.
 
-You still need to follow the same pattern, with the front end accessing the back end via APIs etc - but if your backend is also c#, this allows a lot of code reuse - especially around models and the like.
+You still need to follow the same pattern, with the front end accessing the back end via APIs etc - but if your backend is also C#, this allows a lot of code reuse - especially around models and the like.
 
-This is an amazing technical achievement. It's also not that useful. At this point in time, javascript is THE defacto standard for front end and thus moving away from it has a huge number of downsides.
+This is an amazing technical achievement. It's also not that useful. At this point in time, JavaScript is THE defacto standard for front end and thus moving away from it has a huge number of downsides.
 
 ## Blazors twin
 
